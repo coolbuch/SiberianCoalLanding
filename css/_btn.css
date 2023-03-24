@@ -1,0 +1,70 @@
+.btn {
+  display: inline-block;
+  padding: 20px 38px;
+  font-size: var(--montserrat), sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: var(--bold);
+  color: var(--white);
+  background-color: var(--light-green);
+  border-radius: var(--br-small);
+  transition: background-color var(--short);
+  outline: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--transp-orange);
+}
+
+.btn:active {
+  background-color: var(--dark-green);
+}
+
+.btn-big {
+  max-width: 400px;
+  padding: 25px 39px;
+  font-size: 23px;
+  line-height: 28px;
+  border-radius: var(--br-small);
+}
+
+.btn--border-accent {
+  padding: 18px 36px;
+  color: var(--white);
+  background-color: transparent;
+  border: 3px solid var(--light-green);
+  transition: background-color var(--short), border-color var(--short);
+}
+
+.btn--border-accent:hover,
+.btn--border-accent:focus {
+  background-color: var(--light-green);
+}
+
+.btn--border-accent:active {
+  border-color: var(--dark-green);
+  background-color: var(--dark-green);
+}
+
+.btn--border {
+  color: var(--black);
+  font-weight: var(--regular);
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid var(--black);
+  background-color: transparent;
+  transition: background-color var(--short), border-color var(--short);
+}
+
+.btn--border:hover,
+.btn--border:focus {
+  color: var(--white);
+  background-color: var(--dark-gray);
+}
+
+.btn--border:active {
+  color: var(--white);
+  border-color: var(--black);
+  background-color: var(--black);
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>СибирьУгольТрейд</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./js/itc-slider.js" defer></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/accordion.js" defer></script>
+  <script src="./js/modal.js" defer></script>  
+  <script src="./js/search.js" defer></script> 
+  <script src="./js/burger.js" defer></script> 
+</head>
+
+<body>
+  
+  <h1 class="visually-hidden">СИБИРЬУГОЛЬТРЕЙД</h1>
+  <header class="header">
+    <div class="container header__container">
+      <a class="header__logo">
+        <img src="Img/logo.svg" alt="Логотип СибирьУгольТрейд" width="85" height="56">
+        <img src="Img/suttitle.svg" alt="Логотип СибирьУгольТрейд" width="364" height="51">
+      </a>
+      <nav class="nav header__nav" title="Главное меню">
+        <ul class="nav__list list-reset">
+          <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Этапы</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+        </ul>
+        
+        <div class="nav__list_mobile">
+            <div class="menu_btn"></div>
+            <div class="nav_logo"></div>
+            <div class="nav_search">
+              
+            </div>
+            <div class="nav_search_panel">
+              <input type="search" placeholder="Что будем искать?">
+              <div class="search_icon"></div>
+              <div class="close_icon"></div>
+            </div>
+        </div>
+      </nav>
+      <a href="#" class="btn-reset header-btns" id="modal-button">Войти</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-content">
+            <h2 class="hero-title">
+              Гарантия надежности
+            </h2>
+            <p class="hero-descr">
+              Выбирайте Сибирьугольтрейд - получайте лучшие условия и высокое качество продукции!
+            </p>
+            <a class="btn-big btn hero-btn" href="#">Заказать звонок</a>
+            <a class="btn hero-btn" href="#">Заказать звонок</a>
+          </div>
+          <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+            <div class="itc-slider__wrapper">
+              <div class="itc-slider__items">
+                <div class="itc-slider__item">
+                  <!-- Контент 1 слайда -->
+                </div>
+                <div class="itc-slider__item">
+                  <!-- Контент 2 слайда -->
+                </div>
+                <div class="itc-slider__item">
+                  <!-- Контент 3 слайда -->
+                </div>
+              </div>
+            </div>
+            <ol class="itc-slider__indicators">
+              <li class="itc-slider__indicator" data-slide-to="0"></li>
+              <li class="itc-slider__indicator" data-slide-to="1"></li>
+              <li class="itc-slider__indicator" data-slide-to="2"></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <h2 class="about-title section-title">
+          О нас
+        </h2>
+        <p class="text about-text">
+          Сибирьугольтрейд&nbsp;&mdash; поставщик угля, руды и&nbsp;нефтепродуктов на&nbsp;рынки России, стран СНГ,
+          Европы и&nbsp;Азии. Мы&nbsp;осуществляем поставки высококачественных горных пород и&nbsp;других материалов для
+          различных отраслей промышленности. Наша компания предлагает надежное сотрудничество и&nbsp;современный сервис
+          нашим клиентам.
+          За&nbsp;10&nbsp;лет работы компания реализовала более 10&nbsp;миллионов тонн горнорудной продукции
+          и&nbsp;более тонны нефтепродуктов. Зарекомендовала себя как надежного партнера, поставляя продукцию
+          по&nbsp;эффективной схеме и&nbsp;в&nbsp;оговоренные контрактом сроки. Наши неоспоримые преимущества,
+          отмеченные нашими клиентами:
+        </p>
+        <div class="about__cards-wrap">
+          <div class="about-column">
+            <div class="about__card card-detail">
+              <div class="card-detail__content">
+                <p class="card-detail__text">Сибирьугольтрейд гарантирует своевременную доставку всех поставок
+                  в&nbsp;сроки, которые будут удобны для вас</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-column">
+            <div class="text">Сибирьугольтрейд гарантирует своевременную доставку всех поставок
+              в&nbsp;сроки, которые будут удобны для вас</div>
+          </div>
+          <div class="about-column about-mobile">
+            <div class = "about-mobile-img img1"></div>
+            <div class="about-mobile-title">Качество</div>
+            <p class="text">Мы&nbsp;работаем только с&nbsp;проверенными производителями и&nbsp;гарантируем качество
+              всех поставляемых нами продуктов</p>
+          </div>
+          <div class="about-column about-mobile">
+            <div class = "about-mobile-img img2"></div>
+            <div class="about-mobile-title">Ассортимент</div>
+            <p class="text">Мы&nbsp;предлагаем большой выбор горных пород и&nbsp;других материалов для различных
+              отраслей промышленности</p>
+          </div>
+          <div class="about-column about-mobile">
+            <div class = "about-mobile-img img3"></div>
+            <div class="about-mobile-title">Подход</div>
+            <p class="text">Мы&nbsp;учитываем все ваши требования и&nbsp;пожелания и&nbsp;индивидуально подходим
+              к&nbsp;работе с&nbsp;каждым клиентом</p>
+          </div>
+          <div class="about-column">
+            <div class="about__card card" >
+              <div class="card__content">
+                <h3 class="card-title">Качество</h3>
+                <p class="text">Мы&nbsp;работаем только с&nbsp;проверенными производителями и&nbsp;гарантируем качество
+                  всех поставляемых нами продуктов</p>
+              </div>
+            </div>
+            <div class="about__card card" >
+              <div class="card__content">
+                <h3 class="card-title">Ассортимент</h3>
+                <p class="text">Мы&nbsp;предлагаем большой выбор горных пород и&nbsp;других материалов для различных
+                  отраслей промышленности</p>
+              </div>
+            </div>
+            <div class="about__card card" >
+              <div class="card__content">
+                <h3 class="card-title">Подход</h3>
+                <p class="text">Мы&nbsp;учитываем все ваши требования и&nbsp;пожелания и&nbsp;индивидуально подходим
+                  к&nbsp;работе с&nbsp;каждым клиентом</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="how">
+      <div class="container">
+        <h2 class="how-title section-title">
+          Как мы работаем
+        </h2>
+        <div class="how__tabs tabs">
+          <ul class="tabs__btns-list list-reset">
+            <li class="tabs__btn-item"><button class="tabs__btn active btn-reset" >1 шаг</button></li>
+            <li class="tabs__btn-item"><button class="tabs__btn btn-reset">2 шаг</button></li>
+            <li class="tabs__btn-item"><button class="tabs__btn btn-reset">3 шаг</button></li>
+          </ul>
+          <div class = "tabs__content-wrap">
+            <div class="tabs__content">
+                <h3 class="tabs__title">Проводим консультацию</h3>
+                <p class="text tabs__text">У&nbsp;Вас появились вопросы по&nbsp;поставляемым маркам угля, стоимости,
+                  срокам и&nbsp;объеме отгрузки? Позвоните нам или закажите обратный звонок, наши эксперты
+                  проконсультируют Вас в&nbsp;любое время. Компания Сибирьугольтрейд на&nbsp;рынке с&nbsp;2013&nbsp;года,
+                  за&nbsp;это время мы&nbsp;накопили огромный опыт сотрудничества с&nbsp;компаниями России, Европы
+                  и&nbsp;Азии. Знаем потребности наших клиентов и&nbsp;подходим индивидуально к&nbsp;каждому бизнесу.
+                  Сделаем так, как принято на&nbsp;Вашем предприятии: перед заключением договора уточняем бизнес-процессы
+                  и&nbsp;предлагаем оптимальное решение. Весь отгружаемый уголь и&nbsp;нефтепродукты сертифицируются
+                  производителем и&nbsp;имеют высокое качество. При необходимости организуем видео-конференц связь
+                  на&nbsp;которую пригласим представителей производителя, если потребуется, то&nbsp;согласуем выезд нашей
+                  делегации к&nbsp;Вам на&nbsp;предприятие.</p>
+                <div class="tabs__link-wrap">
+                  <a href="#" class="btn tabs__link">Подробнее</a>
+                  <a href="#" class="btn tabs__link btn--border">Договор</a>
+                </div>
+            </div>
+            <div class="tab-img-wrapper">
+              <div class="tab-img"></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section class="question">
+      <div class="container">
+        <h2 class="question__title section-title">Часто задаваемые вопросы</h2>
+        <div class="accordion" id ="accordion1">
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <div class="accordion-title-text">Из чего формируется конечная стоимость ваших услуг?</div>
+              <div class="accordion-title-img"></div>
+            </div>
+            <div class="accordion-body">
+              Ключевыми фактороми ценообразования перевозок являются стоимость самого груза и расстояние, чем дальше груз транспортируется, тем дороже перевозка.</br>
+              На цену перевозки также влияют особенности груза, необходимая скорость (срочность) доставки, дополнительные услуги.</br>
+              Стоимость перевозки контейнерных грузов по железной дороге или морским, речным путям включает в себя тариф на контейнерные перевозки, который устанавливает железная дорога, морской или речной порт, НДС, таможенные сборы при пересчеечнии границ, погрузочно-разгрузочные работы
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <div class="accordion-title-text">Какие горнорудные материалы вы доставляете?</div>
+              <div class="accordion-title-img"></div>
+            </div>
+            <div class="accordion-body">
+              Сибирьугольтрейд занимается поставкой горнорудных материалов, таких как:
+              <ul>
+                <li>Железная руда</li>
+                <li>Свинцово-цинковая руда</li>
+                <li>Медно-цинковая руда</li>
+                <li>Бурый уголь</li>
+                <li>Уголь энергетический</li>
+                <li>Уголь коксующийся</li>
+                <li>А (Антрацит)</li>
+                <li>Кокс</li>
+                <li>Марганец</li>
+                <li>Золото</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <div class="accordion-title-text">Какие гарантиии качества вы предоставляете?</div>
+              <div class="accordion-title-img"></div>
+            </div>
+            <div class="accordion-body">
+              В основном мы доставляем горнорудные материалы добытые в Кузбассе и ближайших областях.</br>
+              В Кузбассе насчитывается 10 месторождений с запасами железных руд категорий А+В+С1 и сосредоточено 58,5% всех углей России. Кузбасские угли уникальны по своему качеству. Они представлены практически всеми технологическими марками и группами от бурых до антрацитов. Но самое главное их природное преимущество перед углями других бассейнов мира — это сочетание таких качественных показателей как высокая теплота сгорания (6250 ккал/кг), низкое содержание серы (0,4-0,6%), незначительное содержание влаги (7,8-10%) и средняя зольность (15,3-23,2%). Эти показатели значительно лучше средних по угольной отрасли России.</br> 
+              Вся доставляемая продукция сертифицирована!
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <div class="accordion-title-text">Я выбираю между разными компаниями. В чём ваше отличие?</div>
+              <div class="accordion-title-img"></div>
+            </div>
+            <div class="accordion-body">
+              Сибирьугольтрейд работает с 2013 года и дорожит своей репутацией.</br>
+              Для контроля поставок и перехода прав собственности внутри компании была разработана система отслеживания отправлений.  Для наших клиентов мы создали удобный личный кабинет, в котором вы получаете информацию об отправлениях и сроках получения груза, храните информацию об отгрузках, скан-копии документов. В личном кабинете вам доступен оперативный пакет отчётности (аналитическая панель) и управление сотрудниками. </br>
+              За каждым клиентом закреплен персональный менеджер, он всегда на связи, оперативно отработает заявку и совместно с юристами подготовит документы</br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="footer">
+    <div class="container footer-container">
+      <div class="footer-wrapp">
+        <div class="footer-left">
+          <div class="footer-left-content">
+            <a class="footer__logo">
+              <img src="img/logo_combined.svg" alt="Логотип Евклид" width="300" height="110" class="footer-logo">
+              <img src="img/logo_combined.svg" alt="Логотип Евклид" width="250" height="90" class="footer-logo_1024">
+              <img src="img/logo_combined.svg" alt="Логотип Евклид" width="180" height="50" class="footer-logo_320">
+            </a>
+            <nav class="nav footer__nav" title="Главное меню">
+              <ul class="footer__list list-reset">
+                <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Проекты</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Договор оферты</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Конфиденциальность</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Партнёрское соглашение</a></li>
+              </ul>
+            </nav>
+            <div class="footer-socials">
+              <div class="footer-social-item"></div>
+              <div class="footer-social-item"></div> 
+            </div>
+          </div>
+        </div>
+        <div class="footer-center">
+          <ul class="footer-form list-reset">
+            <h2 class="footer-title section-title">
+              Оставить заявку
+            </h2>
+            <li class="form-input">
+              <input class="footer__form-input" type="text" name="Фио" placeholder="Фамилия, имя и отчество*" required>
+            </li>
+            <li class="form-input">
+              <input class="footer__form-input" type="email" name="email" placeholder="E-mail" required>
+            </li>
+            <li class="form-input">
+              <textarea class="footer__form-input footer__form-messages" name="Сообщение"
+                placeholder="Сообщение"></textarea>
+            </li>
+            <li class="form-input">
+              <a class="btn footer-btn" href="#">Отправить данные</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <p class="text footer-text">
+            Сибирьугольтрейд гарантирует качество предоставляемой продукции, отвечает своей репутацией за&nbsp;условия
+            и&nbsp;сроки поставок. Индивидуальный подход к&nbsp;каждому клиенту обеспечивает уверенность в&nbsp;выборе
+            нашей компании.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="burger-menu">
+    <div class="burger-menu-close"></div>
+    <div class ="burger-menu-nav">
+      <a href="#" class="burger-menu__link">О нас</a>
+      <a href="#" class="burger-menu__link">Проекты</a>
+      <a href="#" class="burger-menu__link">Этапы</a>
+      <a href="#" class="burger-menu__link">Отзывы</a>
+      <a href="#" class="burger-menu__link">Контакты</a>
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal-wrapper">
+      <div class="modal-container">
+        <div class="modal-title">
+          Войти
+        </div>
+        <div class="modal-hint">
+          Введите свои данные для входа в систему отслеживания отправлений
+        </div>
+        <form class="modal-form">
+          <input type="text" placeholder="Логин">
+          <input type="text" placeholder="Пароль">
+          <div class="checkbox-wrapper">
+            <input type="checkbox">
+            <div>Запомнить меня</div>
+          </div>
+          <button>Войти</button>
+        </br>
+        <div class="modal-info">У вас нет учетной записи? Тогда оставьте заявку и с вами свяжется менеджер</div>
+        <div class="modal-error">Неправильный логин или пароль. Обратитесь к вашему менеджеру, указанному в договоре.</div>  
+      </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

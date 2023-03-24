@@ -1,0 +1,17 @@
+.how {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.how-title {
+  margin-bottom: 50px;
+}
+
+
+
+@media screen and (min-width:320px ) and (max-width: 767px ) {
+  .how {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }  
+}

@@ -1,0 +1,51 @@
+.card {
+  display: flex;
+  align-items: center;
+  max-width: 870px;
+  padding: 36px 89px 36px 43px;
+  border: 1px solid var(--lighgray);
+  border-radius: var(--br-big);
+  background-size: 0;
+}
+
+.card::before {
+  content: "";
+  flex-shrink: 0;
+  width: calc(120 / (870 - 43 - 89) * 100%);
+  margin-right: 50px;
+  padding-top: calc(120 / (870 - 43 - 89) * 100%);
+  background-image: inherit;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card:nth-child(1){
+  background-image: url('../img/about_consul1.svg');
+}
+.card:nth-child(2){
+  background-image: url('../img/adout_consuk2.svg');
+}
+.card:nth-child(3){
+  background-image: url('../img/adout_consuk3.svg');
+}
+
+@media screen and (min-width: 1024px ) and (max-width: 1700px )    {
+  .card {
+    max-width: unset;
+    height: 295px;
+  }
+}
+
+@media screen and (min-width: 768px ) and (max-width: 1023px ) {
+  .card {
+    max-width: unset;
+    height: 235px;
+  }
+}

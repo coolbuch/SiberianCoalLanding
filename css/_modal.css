@@ -1,0 +1,125 @@
+.modal{
+    width: 750px;
+    height: 750px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: var(--white);
+    border: 1px solid #CACACA;
+    border-radius: 32px;
+    z-index: 100;
+    visibility: hidden;
+}
+
+.modal-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container{
+    width: 375px;
+}
+
+.modal-title{
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 61px;
+    color: var(--light-green);
+}
+
+.modal-hint{
+    color: var(--lighgray);
+    font-size: var(--dafault-fs);
+    line-height: 19px;
+    margin-bottom: 12px;
+}
+
+.modal-form{
+
+}
+
+.modal-form input[type=text]{
+    border: 1px solid #CACACA;
+    border-radius: 10px;
+    width: 375px;
+    height: 55px;
+    margin-bottom: 31px;
+    padding: 15px;
+}
+
+.modal-form input[type=text]::placeholder{
+
+    color: var(--lighgray);
+    font-size: var(--dafault-fs);
+    line-height: 19px;
+}
+
+.modal-form input[type=text]:nth-last-child(){
+    margin-bottom: 24px;
+}
+
+.modal-form input[type=checkbox]{
+    background-color: var(--light-green);
+    border-radius: 4px;
+    width: 23px;
+    height: 23px;
+    margin-right: 9px;
+    accent-color: var(--light-green)
+}
+
+
+
+.modal-form .checkbox-wrapper{
+    display: flex;
+    align-items: center;
+    
+    margin-bottom: 46px;
+    line-height: 19px;
+    color: var(--lighgray);
+}
+
+.modal-form button{
+    background-color: var(--light-green);
+    border: 1px solid #CACACA;
+    border-radius: 10px;
+    width: 375px;
+    height: 55px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    cursor: pointer;
+    color: #FFFFFF;
+    margin-bottom: 26px;
+    transition: background-color var(--short);
+}
+
+.modal-form button:hover{
+    transition: background-color var(--short);
+    background-color: var(--transp-orange);
+}
+
+.modal-form button:active{
+    transition: background-color var(--short);
+    background-color: var(--dark-green);
+}
+
+.modal-info{
+    line-height: 19px;
+    color: var(--lighgray);
+    font-size: var(--dafault-fs);
+}
+
+.modal-error{
+    visibility: hidden;
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 19px;
+    color: #DE4440;
+}

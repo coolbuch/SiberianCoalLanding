@@ -1,0 +1,363 @@
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--black);
+}
+
+.footer-container {
+  color: var(--lighgray);
+}
+
+.footer__logo {
+  width: 278.07px;
+  height: 38.81px;
+}
+
+.footer-logo_1024{
+  display: none;
+}
+.footer-wrapp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  max-width: 252px;
+  height: 494px;
+  margin-right: 350px;
+}
+
+.footer-left-content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.footer__link {
+  max-width: 54px;
+  height: 36px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+  transition: color var(--short);
+}
+
+.footer__link:hover {
+  color: var(--light-green);
+  outline: none;
+}
+
+.footer__link:focus:not(:hover):not(:active) {
+  outline: 2px solid var(--light-green);
+  outline-offset: 3px;
+}
+
+.footer__link:active {
+  color: var(--dark-green);
+  cursor: pointer;
+}
+
+.footer__nav {
+  /*margin-top: 30px;*/
+  /*padding-bottom: 90px;*/
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+
+.footer-social-item:not(:last-child) {
+  padding-right: 25px;
+}
+
+.social-link {
+  color: var(--dark-gray);
+  transition: color var(--short);
+}
+
+.social-link:hover {
+  color: var(--light-green);
+}
+
+.social-link:focus {
+  outline: 2px solid var(--light-green);
+}
+
+.social-link:active {
+  color: var(--dark-green);
+}
+
+.footer-center {
+  max-width: 570px;
+  height: 494px;
+  margin-right: 236px;
+}
+
+.footer-title {
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.footer__form-input {
+  border: none;
+  margin-bottom: 25px;
+  padding-left: 24px;
+  font-size: 16px;
+  line-height: 32px;
+  width: 570px;
+  height: 62px;
+  border-radius: var(--br-small);
+  background-color: #414141;
+  color: var(--lighgray);
+  transition: background-color color var(--short);
+}
+
+.footer__form-input:hover,
+.footer__form-input:focus {
+  outline: none;
+  background-color: var(--dark-gray);
+}
+
+.footer__form-input:active {
+  color: var(-white);
+  background-color: var(--dark-gray);
+}
+
+.footer__form-messages {
+  padding-top: 14px;
+  width: 570px;
+  height: 150px;
+}
+
+.footer-btn {
+  text-align: center;
+  width: 269px;
+  height: 58px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 151px;
+}
+
+.footer-right {
+  padding-top: 90px;
+  max-width: 363px;
+  height: 320px;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.footer-logo_320{
+  display: none;
+}
+
+@media screen and (min-width: 1024px ) and (max-width: 1700px )    {
+  .footer-right{
+    display: none;
+  }
+
+  .footer-left {
+    max-width: 252px;
+    height: 494px;
+    margin-right: unset;
+  }
+
+  .footer-center {
+    max-width: unset;
+    height: unset;
+    margin-right: unset;
+  }
+  .footer-logo{
+    display: none;
+  }
+  .footer-logo_1024{
+    display: block;
+  }
+  .footer-social-item:nth-child(1){
+    background-image: url("../img/ok\ footer.svg");
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
+  }
+  .footer-social-item:nth-child(2){
+    background-image: url("../img/vk\ footer.svg");
+    width: 60px;
+    height: 60px;
+  }
+  .footer__nav {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  
+}
+
+@media screen and (min-width: 768px ) and (max-width: 1023px) {
+  .footer-right{
+    display: none;
+  }
+  .footer-wrapp {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  .footer__nav{
+    display: none;
+  }
+
+  .footer-left {
+    max-width: 252px;
+    height: unset;
+    margin-right: 0px;
+    margin-top:  66px;
+  }
+
+  .footer-socials{
+    margin-top: 48px;
+  }
+  .footer-left-content{
+    display: flex;
+    flex-direction: column;
+    height: unset;
+    justify-content: flex-start;
+  }
+
+  .footer-logo{
+    display: none;
+  }
+  .footer-logo_320{
+    display: none;
+  }
+  .footer-logo_1024{
+    display: block;
+  }
+  .footer-social-item:nth-child(1){
+    background-image: url("../img/ok\ footer.svg");
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
+  }
+  .footer-social-item:nth-child(2){
+    background-image: url("../img/vk\ footer.svg");
+    width: 60px;
+    height: 60px;
+  }
+  .footer__nav {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+
+  
+}
+
+@media screen and (min-width: 320px ) and (max-width: 767px ) {
+  .footer-right{
+    display: none;
+  }
+  .footer-title{
+    font-size: 24px;
+    line-height: 29px;
+    align-self: start;
+  }
+
+  .footer-wrapp {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  .footer__nav{
+    display: none;
+  }
+
+  .footer__form-input{
+    width: 290px;
+  }
+
+  .footer-left {
+    max-width: unset;
+    width: 100%;
+    height: unset;
+    margin-right: 0px;
+    margin-top:  16px;
+  }
+  .footer-btn{
+    padding: 12px 28px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    width: 180px;
+    height: 39px;
+    border-radius: 8px;
+    margin:0 ;
+  }
+  .footer-socials{
+    margin-top: 48px;
+  }
+  .footer-left-content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: unset;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-center {
+    max-width: unset;
+    height: unset;
+    margin-right: unset;
+    
+  }
+  .footer-form{
+    width: 290px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #414141;
+  }
+  .footer-logo_320{
+    display: block;
+    width: 131;
+    height: 42;
+    margin: 0 auto;
+  }
+  .footer-logo_1024{
+    display: none;
+  }
+  .footer-logo{
+    display: none;
+  }
+
+  .footer-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  
+  
+  .footer-social-item:nth-child(1){
+    background-image: url("../img/ok\ footer.svg");
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    background-size: cover;
+  }
+  .footer-social-item:nth-child(2){
+    background-image: url("../img/vk\ footer.svg");
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+  }
+  .footer__nav {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,226 @@
+/**
+ * ItcSlider
+ * @version 1.0.0
+ * @author https://github.com/itchief
+ * @copyright Alexander Maltsev 2020 - 2022
+ * @license MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+ * @tutorial https://itchief.ru/javascript/slider
+ */
+
+.itc-slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 620px;
+  background-color: var(--gray-blue);
+  border-radius: var(--br-big);
+  background-size: cover;
+  background-position: center;
+}
+
+.itc-slider__wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+
+.itc-slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+  height: 100%;
+}
+
+.itc-slider__transition-none {
+  transition: none;
+}
+
+.itc-slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  user-select: none;
+  will-change: transform;
+  border-radius: var(--br-big);
+}
+
+/* кнопки влево и вправо */
+.itc-slider__btn {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  background: rgb(0 0 0 / 20%);
+  border: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.itc-slider__btn_hide {
+  display: none;
+}
+
+.itc-slider__btn_prev {
+  left: 0;
+}
+
+.itc-slider__btn_next {
+  right: 0;
+}
+
+.itc-slider__btn:hover,
+.itc-slider__btn:focus {
+  color: #fff;
+  text-decoration: none;
+  background: rgb(0 0 0 / 30%);
+  outline: 0;
+}
+
+.itc-slider__btn::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.itc-slider__btn_prev::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.itc-slider__btn_next::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* индикаторы */
+.itc-slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  margin: 0 15%;
+  margin-bottom: 15px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.itc-slider__indicator {
+  flex: 0 1 auto;
+  box-sizing: content-box;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+  text-indent: -999px;
+  background-color: rgb(255 255 255 / 50%);
+  background-clip: padding-box;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  cursor: pointer;
+}
+
+.itc-slider__indicator_active {
+  background-color: rgb(255 255 255 / 90%);
+}
+
+
+/* ITEMS */
+.itc-slider__item:nth-child(1) {
+  background-image: url("../img/slaider1.jpg");
+}
+
+.itc-slider__item:nth-child(2) {
+  background-image: url("../img/slaider2.png");
+}
+
+.itc-slider__item:nth-child(3) {
+  background-image: url("../img/slaider3.png");
+}
+
+@media screen and (min-width:1024px ) and (max-width: 1700px )    {
+  .itc-slider {
+    height: 668px;
+  }
+
+  .itc-slider__item:nth-child(1) {
+    background-image: url("../img/hero-pic-1024-1.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .itc-slider__item:nth-child(2) {
+    background-image: url("../img/hero-pic-1024-2.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .itc-slider__item:nth-child(3) {
+    background-image: url("../img/hero-pic-1024-3.png");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width:768px ) and (max-width: 1023px ) {
+  .itc-slider__item:nth-child(1) {
+    background-image: url("../img/hero-pic-768-1.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .itc-slider__item:nth-child(2) {
+    background-image: url("../img/hero-pic-768-2.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .itc-slider__item:nth-child(3) {
+    background-image: url("../img/hero-pic-768-3.png");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width:320px ) and (max-width: 767px ) {
+  .itc-slider {
+    height: 308px;
+  }
+
+  .itc-slider__item:nth-child(1) {
+    background-image: url("../img/hero-pic-320-1.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+  }
+  
+  .itc-slider__item:nth-child(2) {
+    background-image: url("../img/hero-pic-320-2.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+  }
+  
+  .itc-slider__item:nth-child(3) {
+    background-image: url("../img/hero-pic-320-3.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+  }
+
+  .itc-slider__indicator {
+    width: 10px;
+    height: 10px;
+    margin-bottom: -10px;
+  }
+
+}

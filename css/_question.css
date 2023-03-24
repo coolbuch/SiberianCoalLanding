@@ -1,0 +1,35 @@
+.question {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.question__title {
+  margin-bottom: 34px;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+@media screen and (min-width:1024px ) and (max-width: 1700px )    {
+  .question {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width:768px ) and (max-width: 1023px ) {
+  .question {
+    padding-top: 20px;
+  }
+}
+
+
+@media screen and (min-width:320px ) and (max-width: 767px ) {
+  .question {
+    padding-top: 30px;
+  }
+  .question__title {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}

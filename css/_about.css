@@ -1,0 +1,159 @@
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-text {
+  max-width: 1235px;
+}
+
+.about__cards-wrap {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-column {
+  display: flex;
+  margin-right: 32px;
+  flex-direction: column;
+  width: calc(870 / 1770 * 100%);
+}
+
+.about__card:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.about__card {
+  flex-grow: -1;
+}
+
+.about-title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+}
+.about-column:nth-child(2){
+  display: none;
+}
+
+.about-mobile{
+  display: none;
+}
+
+@media screen and (min-width: 1024px ) and (max-width: 1700px )    {
+  .about {
+    margin-top: 35px;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  .about__cards-wrap {
+    display: unset;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .about-column{
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .about-text{
+    margin-bottom: 60px;
+  }
+
+}
+
+@media screen and (min-width: 768px ) and (max-width: 1023px ) {
+  .about {
+    margin-top: 35px;
+    padding-bottom: 30px;
+    padding-top: 0px;
+    width: 100%;
+  }
+
+  .about__cards-wrap {
+    display: unset;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  
+
+  .about-column:last-child{
+    margin-bottom: 0px;
+  }
+
+  .about-column{
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  
+  .about-text{
+    margin-bottom: 60px;
+  }
+ 
+  
+}
+
+@media screen and (min-width:320px ) and (max-width: 767px ) {
+  
+  
+  .about {
+    margin-top: 10px;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+  .about-title{
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .about-column:nth-child(2){
+    display: unset;
+  }
+  .about-mobile-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 4px;
+  }
+  .about-mobile{
+    display: unset;
+  }
+  .about__cards-wrap {
+    display: unset;
+    width: 100%;
+    flex-direction: row;
+  }
+  .about-column{
+    width: 100%;
+    margin-bottom: 8px;
+    margin-right: 0px;
+  }
+
+  .about-column:nth-child(6),
+  .about-column:nth-child(7),
+  .about-column:nth-child(8){
+    display: none;
+  }
+  .about-mobile-img{
+    display: inline-block;
+    width: 64px;
+    height: 49px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 32px;
+  }
+  .img1{
+    background-image: url('../img/about_consul1.svg');
+    background-position: cover;
+  }
+  .img2{
+    background-image: url('../img/adout_consuk2.svg');
+    background-position: cover;
+  }
+  .img3{
+    background-image: url('../img/adout_consuk3.svg');
+    background-position: cover;
+  }
+}

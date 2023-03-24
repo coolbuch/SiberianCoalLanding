@@ -1,0 +1,48 @@
+:root {
+  /* Шрифты */
+  --montserrat: "Montserrat";
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --extrabold: 800;
+
+  --dafault-fs: 16px;
+  --dafault-lh: 32px;
+
+  /* Цвета */
+  --dark: #333333;
+  --white: #ffffff;
+  --light-green: #4B8B3B;
+  --dark-green: #3A6130;
+  --transp-orange: rgba(48, 133, 52, 0.7);
+  --gray-blue: #576b8f;
+  --dark-transp: rgba(0, 0, 0, 0.5);
+  --lighgray: #cacaca;
+  --black: #000000;
+  --dark-gray: #666666;
+
+  /*Картинка в разделе Как мы работаем */
+  --tab-img: url(../img/howconsuk.jpg);
+  
+  /* Контейнер */
+  --container-max-width: 1870px;
+  --container-padding: 50px;
+
+  /* Транзит */
+  --short: .3s;
+
+  /* Бордер радиус */
+  --br-small: 16px;
+  --br-big: 32px;
+
+  
+}
+
+
+@media screen and (min-width:320px ) and (max-width: 767px ) {
+  :root{
+    --container-padding: 15px;
+    --dafault-fs: 14px;
+  }
+}

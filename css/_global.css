@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: var(--montserrat), sans-serif;
+  font-size: var(--dafault-fs);
+  line-height: var(--dafault-lh);
+  color: var(--dark);
+  background-color: var(--white);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 59px;
+  font-weight: var(--regular);
+}
+
+.text {
+  margin-top: 0;
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}
+
+.color-lighgray {
+  color: var(--lighgray);
+}
+
+@media screen (min-width:768px ) and (max-width: 1023px ) {
+  .text {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width:320px ) and (max-width: 767px ) {
+  .text {
+    margin-bottom: 14px;
+  }
+}
